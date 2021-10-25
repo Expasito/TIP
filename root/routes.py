@@ -4,7 +4,7 @@ from flask import render_template
 @app.route('/home')
 def home():
 
-    return render_template('home.html',name="Expasito")
+    return render_template('index.html',name="Expasito")
 
 @app.route('/fileone')
 def fileone():
