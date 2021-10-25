@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<body>
+<p>
+Top {{ num }} users on the website:
+{% for user in users%}
+<p>{{user}}</p>
+{% endfor %}
+</p>
+</body>
+<a href="{{ url_for('home') }}">Back to home page</a>
+
+{% endblock content %}
